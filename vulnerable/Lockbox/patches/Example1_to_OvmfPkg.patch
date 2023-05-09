@@ -1,0 +1,29 @@
+diff --git a/OvmfPkg/OvmfPkgX64.dsc b/OvmfPkg/OvmfPkgX64.dsc
+index f39d9cd1..3dd7119b 100644
+--- a/OvmfPkg/OvmfPkgX64.dsc
++++ b/OvmfPkg/OvmfPkgX64.dsc
+@@ -1041,7 +1041,9 @@
+   OvmfPkg/SmmAccess/SmmAccess2Dxe.inf
+   OvmfPkg/SmmControl2Dxe/SmmControl2Dxe.inf
+   OvmfPkg/CpuS3DataDxe/CpuS3DataDxe.inf
+-
++  EmulatorPkg/Example1_Driver_Lockbox/Example1_Driver_Lockbox.inf
++  EmulatorPkg/Example1_App/Example1_App.inf
++  
+   #
+   # SMM Initial Program Load (a DXE_RUNTIME_DRIVER)
+   #
+diff --git a/OvmfPkg/OvmfPkgX64.fdf b/OvmfPkg/OvmfPkgX64.fdf
+index c0f5a1ef..51f1e22d 100644
+--- a/OvmfPkg/OvmfPkgX64.fdf
++++ b/OvmfPkg/OvmfPkgX64.fdf
+@@ -180,6 +180,9 @@ INF  MdeModulePkg/Universal/StatusCodeHandler/Pei/StatusCodeHandlerPei.inf
+ INF  OvmfPkg/PlatformPei/PlatformPei.inf
+ INF  MdeModulePkg/Core/DxeIplPeim/DxeIpl.inf
+ INF  UefiCpuPkg/Universal/Acpi/S3Resume2Pei/S3Resume2Pei.inf
++INF EmulatorPkg/Example1_Driver_Lockbox/Example1_Driver_Lockbox.inf
++INF EmulatorPkg/Example1_App/Example1_App.inf
++
+ !if $(SMM_REQUIRE) == TRUE
+ INF  MdeModulePkg/Universal/FaultTolerantWritePei/FaultTolerantWritePei.inf
+ INF  MdeModulePkg/Universal/Variable/Pei/VariablePei.inf

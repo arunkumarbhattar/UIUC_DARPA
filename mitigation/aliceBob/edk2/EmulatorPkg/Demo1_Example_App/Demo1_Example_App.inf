@@ -1,0 +1,41 @@
+[Defines]
+  INF_VERSION = 0x00010005
+  BASE_NAME = Demo1Exploit
+  FILE_GUID = 6ebc300f-e917-47bd-bed4-2a1b61adf7f3
+  MODULE_TYPE = UEFI_APPLICATION
+  VERSION_STRING = 1.0
+  ENTRY_POINT = Demo1Exploit_Entry
+
+[Sources]
+  Demo1_Example_App.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  ShellPkg/ShellPkg.dec
+  EmulatorPkg/EmulatorPkg.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+  ShellLib
+
+
+[Guids]
+  gAliceVariableGuid                       ## CONSUMES
+  gExampleVariableGuid
+[Ppis]
+
+[Protocols]
+  gEfiShellParametersProtocolGuid          ## CONSUMES
+  gDemo1AccessKeyProtocolGuid              ## CONSUMES
+  gDemo1AliceProtocolGuid                  ## CONSUMES
+  gDemo1AccessKeyProtocolGuid              ## CONSUMES
+  gEfiShellProtocolGuid                    ## CONSUMES
+  gEfiShellParametersProtocolGuid          ## CONSUMES
+  gEfiLoadedImageProtocolGuid              ## CONSUMES
+  gDemo1BobProtocolGuid
+
+[FeaturePcd]
+
+[Pcd]
