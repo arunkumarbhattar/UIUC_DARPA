@@ -1,0 +1,15 @@
+
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/OvmfPkg/QemuFlashFvbServicesRuntimeDxe/FvbServicesRuntimeDxe/OUTPUT/FwBlockServiceDxe.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/OvmfPkg/QemuFlashFvbServicesRuntimeDxe/FvbServicesRuntimeDxe/OUTPUT/AutoGen.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/OvmfPkg/QemuFlashFvbServicesRuntimeDxe/FvbServicesRuntimeDxe/OUTPUT/QemuFlash.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/OvmfPkg/QemuFlashFvbServicesRuntimeDxe/FvbServicesRuntimeDxe/OUTPUT/QemuFlashDxe.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/OvmfPkg/QemuFlashFvbServicesRuntimeDxe/FvbServicesRuntimeDxe/OUTPUT/FwBlockService.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/OvmfPkg/QemuFlashFvbServicesRuntimeDxe/FvbServicesRuntimeDxe/OUTPUT/FvbInfo.obj.deps
+
+               

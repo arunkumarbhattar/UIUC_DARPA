@@ -1,0 +1,15 @@
+
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/X64/Xcode5ExceptionHandlerAsm.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/X64/Xcode5ExceptionHandlerAsm.nasm.trim.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/X64/ArchExceptionHandler.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/PeiCpuException.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/CpuExceptionCommon.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/PeiDxeSmmCpuException.obj.deps
+
+               

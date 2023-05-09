@@ -1,0 +1,4 @@
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/UefiCpuPkg/Library/BaseUefiCpuLib/BaseUefiCpuLib.inf
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/UefiCpuPkg/Library/BaseUefiCpuLib/X64/InitializeFpu.nasm
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/UefiCpuPkg/Library/BaseUefiCpuLib/BaseUefiCpuLib.c
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/UefiCpuPkg/Library/BaseUefiCpuLib/BaseUefiCpuLib/DEBUG/AutoGen.h

@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_RAW -o /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/FV/Ffs/1BA0062E-C779-4582-8566-336AE8F78F09ResetVector/1BA0062E-C779-4582-8566-336AE8F78F09SEC1.1.raw /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/OvmfPkg/ResetVector/ResetVector/OUTPUT/ResetVector.bin

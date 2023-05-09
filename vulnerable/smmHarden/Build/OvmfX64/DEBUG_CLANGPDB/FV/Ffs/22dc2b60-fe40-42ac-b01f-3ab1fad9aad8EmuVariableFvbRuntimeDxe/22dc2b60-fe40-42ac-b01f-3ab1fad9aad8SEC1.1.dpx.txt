@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/FV/Ffs/22dc2b60-fe40-42ac-b01f-3ab1fad9aad8EmuVariableFvbRuntimeDxe/22dc2b60-fe40-42ac-b01f-3ab1fad9aad8SEC1.1.dpx /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/OvmfPkg/EmuVariableFvbRuntimeDxe/Fvb/OUTPUT/EmuVariableFvbRuntimeDxe.depex

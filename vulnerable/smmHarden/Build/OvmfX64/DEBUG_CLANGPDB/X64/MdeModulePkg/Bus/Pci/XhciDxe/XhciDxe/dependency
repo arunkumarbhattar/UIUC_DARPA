@@ -1,0 +1,15 @@
+
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/MdeModulePkg/Bus/Pci/XhciDxe/XhciDxe/OUTPUT/XhciSched.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/MdeModulePkg/Bus/Pci/XhciDxe/XhciDxe/OUTPUT/AutoGen.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/MdeModulePkg/Bus/Pci/XhciDxe/XhciDxe/OUTPUT/Xhci.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/MdeModulePkg/Bus/Pci/XhciDxe/XhciDxe/OUTPUT/ComponentName.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/MdeModulePkg/Bus/Pci/XhciDxe/XhciDxe/OUTPUT/XhciReg.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/MdeModulePkg/Bus/Pci/XhciDxe/XhciDxe/OUTPUT/UsbHcMem.obj.deps
+
+               

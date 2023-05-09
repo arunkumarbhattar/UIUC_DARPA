@@ -1,0 +1,13 @@
+
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe/OUTPUT/AutoGen.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe/OUTPUT/Presentation.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe/OUTPUT/Setup.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe/OUTPUT/Expression.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe/OUTPUT/IfrParse.obj.deps
+
+               

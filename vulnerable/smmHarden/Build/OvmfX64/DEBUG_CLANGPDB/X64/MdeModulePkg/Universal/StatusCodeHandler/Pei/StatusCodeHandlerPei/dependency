@@ -1,0 +1,11 @@
+
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/MdeModulePkg/Universal/StatusCodeHandler/Pei/StatusCodeHandlerPei/OUTPUT/MemoryStausCodeWorker.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/MdeModulePkg/Universal/StatusCodeHandler/Pei/StatusCodeHandlerPei/OUTPUT/StatusCodeHandlerPei.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/MdeModulePkg/Universal/StatusCodeHandler/Pei/StatusCodeHandlerPei/OUTPUT/AutoGen.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/MdeModulePkg/Universal/StatusCodeHandler/Pei/StatusCodeHandlerPei/OUTPUT/SerialStatusCodeWorker.obj.deps
+
+               

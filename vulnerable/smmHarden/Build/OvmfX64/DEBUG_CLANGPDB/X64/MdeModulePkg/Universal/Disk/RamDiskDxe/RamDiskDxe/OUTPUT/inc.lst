@@ -1,0 +1,9 @@
+-I/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdeModulePkg/Universal/Disk/RamDiskDxe
+-I/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/DEBUG
+-I/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdePkg
+-I/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdePkg/Include
+-I/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdePkg/Test/UnitTest/Include
+-I/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdePkg/Include/X64
+-I/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdeModulePkg
+-I/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdeModulePkg/Include
+-I/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/include

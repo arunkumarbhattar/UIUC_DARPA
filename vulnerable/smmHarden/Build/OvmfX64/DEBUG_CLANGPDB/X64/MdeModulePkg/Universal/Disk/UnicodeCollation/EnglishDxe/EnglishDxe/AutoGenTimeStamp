@@ -1,0 +1,16 @@
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/UnicodeCollationEng.h
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/UnicodeCollationEng.c
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull.inf
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdePkg/Library/DxePcdLib/DxePcdLib.inf
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdePkg/Library/BasePrintLib/BasePrintLib.inf
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/OvmfPkg/Library/PlatformDebugLibIoPort/PlatformDebugLibIoPort.inf
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe.inf
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdePkg/Library/BaseMemoryLibRepStr/BaseMemoryLibRepStr.inf
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib.inf
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdePkg/Library/BaseLib/BaseLib.inf
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint.inf
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib.inf
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsicSev.inf
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe/DEBUG/AutoGen.h
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/OvmfPkg/Library/CcProbeLib/CcProbeLib.inf
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdePkg/Library/TdxLib/TdxLib.inf

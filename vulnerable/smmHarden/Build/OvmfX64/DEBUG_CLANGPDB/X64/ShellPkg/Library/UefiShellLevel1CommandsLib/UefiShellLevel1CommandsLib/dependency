@@ -1,0 +1,19 @@
+
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/ShellPkg/Library/UefiShellLevel1CommandsLib/UefiShellLevel1CommandsLib/OUTPUT/Goto.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/ShellPkg/Library/UefiShellLevel1CommandsLib/UefiShellLevel1CommandsLib/OUTPUT/UefiShellLevel1CommandsLib.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/ShellPkg/Library/UefiShellLevel1CommandsLib/UefiShellLevel1CommandsLib/OUTPUT/AutoGen.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/ShellPkg/Library/UefiShellLevel1CommandsLib/UefiShellLevel1CommandsLib/OUTPUT/Stall.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/ShellPkg/Library/UefiShellLevel1CommandsLib/UefiShellLevel1CommandsLib/OUTPUT/Shift.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/ShellPkg/Library/UefiShellLevel1CommandsLib/UefiShellLevel1CommandsLib/OUTPUT/If.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/ShellPkg/Library/UefiShellLevel1CommandsLib/UefiShellLevel1CommandsLib/OUTPUT/For.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/ShellPkg/Library/UefiShellLevel1CommandsLib/UefiShellLevel1CommandsLib/OUTPUT/Exit.obj.deps
+
+               

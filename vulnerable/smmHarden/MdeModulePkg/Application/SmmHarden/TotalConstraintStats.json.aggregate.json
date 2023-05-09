@@ -1,0 +1,16 @@
+{"AggregateStats":[{"TotalStats":{"constraints":903,"ptr":186,"ntarr":1,"arr":253,"wild":463}},{"ArrBoundsStats":{"NumPointersNeedBounds":249,"NumNTNoBounds":0,"Details":{"Invalid":0,"BoundsFound":{"ArrayBoundsInferenceStats":{"NamePrefixMatch":0,
+"AllocatorMatch":0,
+"VariableNameMatch":0,
+"NeighbourParamMatch":0,
+"DataflowMatch":0,
+"Declared":249,
+"DeclaredButNotHandled":0
+}}}}},{"NtArrBoundsStats":{"NumPointersNeedBounds":1,"NumNTNoBounds":1,"Details":{"Invalid":0,"BoundsFound":{"ArrayBoundsInferenceStats":{"NamePrefixMatch":0,
+"AllocatorMatch":0,
+"VariableNameMatch":0,
+"NeighbourParamMatch":0,
+"DataflowMatch":0,
+"Declared":1,
+"DeclaredButNotHandled":0
+}}}}},{"PerformanceStats":[{"TimeStats": {"TotalTime":1.174077e+00, "ConstraintBuilderTime":1.085280e-01, "ConstraintSolverTime":5.048700e-02, "ArrayBoundsInferenceTime":9.245000e-02, "RewritingTime":1.724080e-01}},
+{"ReWriteStats":{"NumAssumeBoundsCasts":3, "NumCheckedCasts":0, "NumWildCasts":0, "NumFixedCasts":0, "NumITypes":3, "NumCheckedRegions":11, "NumUnCheckedRegions":10}}]}]}

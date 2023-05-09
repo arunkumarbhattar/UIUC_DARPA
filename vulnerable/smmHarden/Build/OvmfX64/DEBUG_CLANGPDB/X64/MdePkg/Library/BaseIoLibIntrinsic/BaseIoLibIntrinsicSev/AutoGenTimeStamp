@@ -1,0 +1,13 @@
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdePkg/Library/BaseIoLibIntrinsic/IoLib.c
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdePkg/Library/BaseIoLibIntrinsic/IoLibTdx.h
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdePkg/Library/BaseIoLibIntrinsic/IoLibMsc.c
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdePkg/Library/BaseIoLibIntrinsic/IoHighLevel.c
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdePkg/Library/BaseIoLibIntrinsic/IoLibFifo.c
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdePkg/Library/BaseIoLibIntrinsic/IoLibMmioBuffer.c
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdePkg/Library/BaseIoLibIntrinsic/IoLibInternalTdx.c
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdePkg/Library/BaseIoLibIntrinsic/X64/IoFifoSev.nasm
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsicSev/DEBUG/AutoGen.h
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsicSev.inf
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsicInternal.h
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdePkg/Library/BaseIoLibIntrinsic/IoLibSev.h
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/MdePkg/Library/BaseIoLibIntrinsic/IoLibGcc.c

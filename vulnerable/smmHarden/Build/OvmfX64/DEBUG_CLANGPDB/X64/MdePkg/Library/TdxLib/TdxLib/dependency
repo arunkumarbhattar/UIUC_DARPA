@@ -1,0 +1,9 @@
+
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/MdePkg/Library/TdxLib/TdxLib/OUTPUT/Rtmr.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/MdePkg/Library/TdxLib/TdxLib/OUTPUT/TdInfo.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/MdePkg/Library/TdxLib/TdxLib/OUTPUT/AcceptPages.obj.deps
+
+               

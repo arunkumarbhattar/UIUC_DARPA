@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/FV/Ffs/CD3BAFB6-50FB-4fe8-8E4E-AB74D2C1A600EnglishDxe/CD3BAFB6-50FB-4fe8-8E4E-AB74D2C1A600SEC2.1.pe32 /home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe/OUTPUT/EnglishDxe.efi

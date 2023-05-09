@@ -1,0 +1,6 @@
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/OvmfPkg/Library/PlatformInitLib/Platform.c
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/OvmfPkg/Library/PlatformInitLib/MemDetect.c
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/OvmfPkg/Library/PlatformInitLib/Cmos.c
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/OvmfPkg/Library/PlatformInitLib/PlatformInitLib.inf
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/DEBUG/AutoGen.h
+/home/arun/Desktop/darpa_ex1/3C/darpa_demo_edk2/OvmfPkg/Library/PlatformInitLib/IntelTdx.c
