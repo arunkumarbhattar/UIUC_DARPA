@@ -1,0 +1,19 @@
+
+
+-include /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/NetworkPkg/Mtftp4Dxe/Mtftp4Dxe/OUTPUT/Mtftp4Rrq.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/NetworkPkg/Mtftp4Dxe/Mtftp4Dxe/OUTPUT/AutoGen.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/NetworkPkg/Mtftp4Dxe/Mtftp4Dxe/OUTPUT/Mtftp4Impl.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/NetworkPkg/Mtftp4Dxe/Mtftp4Dxe/OUTPUT/Mtftp4Wrq.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/NetworkPkg/Mtftp4Dxe/Mtftp4Dxe/OUTPUT/Mtftp4Driver.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/NetworkPkg/Mtftp4Dxe/Mtftp4Dxe/OUTPUT/ComponentName.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/NetworkPkg/Mtftp4Dxe/Mtftp4Dxe/OUTPUT/Mtftp4Support.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/NetworkPkg/Mtftp4Dxe/Mtftp4Dxe/OUTPUT/Mtftp4Option.obj.deps
+
+               

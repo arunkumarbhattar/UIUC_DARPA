@@ -1,0 +1,18 @@
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/OvmfPkg/ResetVector/ResetVector/OUTPUT/ResetVector.bin: /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/UefiCpuPkg/ResetVector/Vtf0/CommonMacros.inc \
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/UefiCpuPkg/ResetVector/Vtf0/PostCodes.inc \
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/UefiCpuPkg/ResetVector/Vtf0/Port80Debug.asm \
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/UefiCpuPkg/ResetVector/Vtf0/SerialDebug.asm \
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/UefiCpuPkg/ResetVector/Vtf0/DebugDisabled.asm \
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/UefiCpuPkg/ResetVector/Vtf0/Ia32/SearchForBfvBase.asm \
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/UefiCpuPkg/ResetVector/Vtf0/Ia32/SearchForSecEntry.asm \
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/OvmfPkg/ResetVector/X64/IntelTdxMetadata.asm \
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/OvmfPkg/ResetVector/Ia32/Flat32ToFlat64.asm \
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/OvmfPkg/ResetVector/Ia32/PageTables64.asm \
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/OvmfPkg/ResetVector/Ia32/IntelTdx.asm \
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/OvmfPkg/ResetVector/X64/OvmfSevMetadata.asm \
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/OvmfPkg/ResetVector/Ia32/AmdSev.asm \
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/UefiCpuPkg/ResetVector/Vtf0/Ia16/Real16ToFlat32.asm \
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/UefiCpuPkg/ResetVector/Vtf0/Ia16/Init16.asm \
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/OvmfPkg/ResetVector/Main.asm \
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/OvmfPkg/ResetVector/Ia16/ResetVectorVtf0.asm
+# Updated 

@@ -1,0 +1,14 @@
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/OvmfPkg/Library/BasePciCapPciSegmentLib/BasePciCapPciSegmentLib/DEBUG/AutoGen.h
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Base.h
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/IndustryStandard/Pci22.h
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/IndustryStandard/Pci23.h
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Library/BaseLib.h
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Library/DebugLib.h
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Library/MemoryAllocationLib.h
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Library/PciSegmentLib.h
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Uefi/UefiBaseType.h
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/X64/ProcessorBind.h
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/OvmfPkg/Include/Library/PciCapLib.h
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/OvmfPkg/Include/Library/PciCapPciSegmentLib.h
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/OvmfPkg/Library/BasePciCapPciSegmentLib/BasePciCapPciSegmentLib.c
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/OvmfPkg/Library/BasePciCapPciSegmentLib/BasePciCapPciSegmentLib.h

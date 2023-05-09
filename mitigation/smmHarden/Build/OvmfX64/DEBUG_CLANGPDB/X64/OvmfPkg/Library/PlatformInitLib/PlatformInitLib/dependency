@@ -1,0 +1,11 @@
+
+
+-include /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/Cmos.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/MemDetect.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/Platform.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/IntelTdx.obj.deps
+
+               

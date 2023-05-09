@@ -1,0 +1,5 @@
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgLibInternal.h
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgLib.c
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgSec.c
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgSecLib/DEBUG/AutoGen.h
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgSecLib.inf

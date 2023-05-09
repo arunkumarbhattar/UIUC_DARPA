@@ -1,0 +1,17 @@
+
+
+-include /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/NetworkPkg/MnpDxe/MnpDxe/OUTPUT/AutoGen.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/NetworkPkg/MnpDxe/MnpDxe/OUTPUT/MnpMain.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/NetworkPkg/MnpDxe/MnpDxe/OUTPUT/MnpDriver.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/NetworkPkg/MnpDxe/MnpDxe/OUTPUT/MnpVlan.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/NetworkPkg/MnpDxe/MnpDxe/OUTPUT/ComponentName.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/NetworkPkg/MnpDxe/MnpDxe/OUTPUT/MnpConfig.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/NetworkPkg/MnpDxe/MnpDxe/OUTPUT/MnpIo.obj.deps
+
+               

@@ -1,0 +1,14 @@
+-I/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/OvmfPkg/TdxDxe/X64
+-I/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/OvmfPkg/TdxDxe
+-I/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/OvmfPkg/TdxDxe/TdxDxe/DEBUG
+-I/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdeModulePkg
+-I/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdeModulePkg/Include
+-I/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg
+-I/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include
+-I/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Test/UnitTest/Include
+-I/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/X64
+-I/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/UefiCpuPkg
+-I/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/UefiCpuPkg/Include
+-I/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/OvmfPkg
+-I/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/OvmfPkg/Include
+-I/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/OvmfPkg/Csm/Include

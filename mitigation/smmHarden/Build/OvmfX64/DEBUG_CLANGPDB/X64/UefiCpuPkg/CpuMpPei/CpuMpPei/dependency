@@ -1,0 +1,13 @@
+
+
+-include /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/CpuPaging.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/CpuBist.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/AutoGen.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/CpuMp2Pei.obj.deps
+
+-include /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/CpuMpPei.obj.deps
+
+               

@@ -1,0 +1,7 @@
+
+
+-include /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/OvmfPkg/ResetVector/ResetVector/OUTPUT/ResetVector.nasmb.trim.deps
+
+-include /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/OvmfPkg/ResetVector/ResetVector/OUTPUT/ResetVector.bin.deps
+
+               

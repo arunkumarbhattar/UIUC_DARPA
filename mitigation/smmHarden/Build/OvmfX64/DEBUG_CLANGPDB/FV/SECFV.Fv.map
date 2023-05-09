@@ -1,0 +1,19 @@
+EFI_FV_TOTAL_SIZE = 0x34000
+EFI_FV_TAKEN_SIZE = 0xc400
+EFI_FV_SPACE_SIZE = 0x27c00
+
+SecMain (Fixed Flash Address, BaseAddress=0x00fffcc094, EntryPoint=0x00fffcc2f4, Type=PE)
+(GUID=DF1CCEF6-F301-4A63-9661-FC6030DCC880 .textbaseaddress=0x00fffcc2f4 .databaseaddress=0x00fffd6854)
+
+  0x00fffcc2f4    _ModuleEntryPoint
+  0x00fffd48e7    __FUNCTION__.DecompressMemFvs
+  0x00fffd4f04    __const.ValidateHobList.EFI_BOOT_MODE_LIST
+  0x00fffd4f34    __const.ValidateHobList.EFI_RESOURCE_TYPE_LIST
+  0x00fffd5dc3    __FUNCTION__.AcpiTimerLibConstructor
+  0x00fffd60ea    __FUNCTION__.InternalSetPageState
+  0x00fffd6138    __FUNCTION__.PvalidateRange
+  0x00fffd62fc    _gPcd_FixedAtBuild_PcdControlFlowEnforcementPropertyMask
+  0x00fffd62fc    _gPcd_FixedAtBuild_PcdControlFlowEnforcementPropertyMask
+  0x00fffd62fc    _gPcd_FixedAtBuild_PcdControlFlowEnforcementPropertyMask
+
+

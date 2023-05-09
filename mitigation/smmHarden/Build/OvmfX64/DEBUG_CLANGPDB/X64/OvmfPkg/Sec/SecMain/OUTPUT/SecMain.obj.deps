@@ -1,0 +1,47 @@
+/home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/OvmfPkg/Sec/SecMain/OUTPUT/SecMain.obj:   /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/OvmfPkg/Sec/SecMain.c \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/Build/OvmfX64/DEBUG_CLANGPDB/X64/OvmfPkg/Sec/SecMain/DEBUG/AutoGen.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/PiPei.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Uefi/UefiBaseType.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Base.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/X64/ProcessorBind.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Pi/PiPeiCis.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Uefi/UefiMultiPhase.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Guid/WinCertificate.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Pi/PiMultiPhase.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Pi/PiFirmwareVolume.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Pi/PiFirmwareFile.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Pi/PiBootMode.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Pi/PiHob.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Pi/PiDependency.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Pi/PiStatusCode.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Protocol/DebugSupport.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/IndustryStandard/PeImage.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Pi/PiS3BootScript.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Ppi/CpuIo.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Ppi/PciCfg2.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Library/BaseLib.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Library/PcdLib.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Library/PeimEntryPoint.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Library/DebugLib.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Library/BaseMemoryLib.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Library/PeiServicesLib.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Library/CpuLib.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/UefiCpuPkg/Include/Library/UefiCpuLib.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdeModulePkg/Include/Library/DebugAgentLib.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Library/IoLib.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Library/PeCoffLib.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Library/PeCoffGetEntryPointLib.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Library/PeCoffExtraActionLib.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Library/ExtractGuidedSectionLib.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/UefiCpuPkg/Include/Library/LocalApicLib.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdeModulePkg/Include/Library/CpuExceptionHandlerLib.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Ppi/VectorHandoffInfo.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Protocol/Cpu.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Ppi/TemporaryRamSupport.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/OvmfPkg/Include/Ppi/MpInitLibDep.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/OvmfPkg/Include/Library/PlatformInitLib.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/Library/CcProbeLib.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/MdePkg/Include/ConfidentialComputingGuestAttr.h \
+  /home/arun/Desktop/darpa_ex1/darpa_demo_edk2/OvmfPkg/Sec/AmdSev.h
+
+# Updated 
