@@ -29,7 +29,8 @@ DEMO1_ACCESS_KEY bobKey;
 EFI_EVENT Demo1_Bob_PeriodicTimer = NULL;
 UINTN DataToProvide = 0;
 EFI_LOADED_IMAGE_PROTOCOL *gLoadImage = NULL;
-
+EFI_HANDLE        BobImageHandle;
+UINTN             Mode;
 /**
   Handler for Bob when the data provided by Alice is of type INIT Mode.
   The format is expected to be a function pointer that Bob must call.
@@ -68,8 +69,6 @@ Demo1BobRunModeAction(
   )
 {
   DataToProvide = *(UINTN *)Data;
-  //print the address of DataToProvide
-  DEBUG((DEBUG_INFO, "Bob: DataToProvide address is %p\n", &DataToProvide));
 }
 
 /**
@@ -92,19 +91,21 @@ Demo1BobTimerHandler (
 {
   static UINTN change=0;
   UINTN   Data=0;
-  UINTN   Mode = 0;
+  Mode = 0;
   UINTN   BufferSize = sizeof(Mode);
 
   //
   // Get Alice_Mode Variable
   //
+  DEBUG ((DEBUG_ERROR, "Calling GetAccess from bob\n"));
   EFI_STATUS Status = gST->RuntimeServices->GetAccessVariable (
     ALICEMODE_VARNAME,
     &gAliceVariableGuid,
     NULL,
     &bobKey,
     &BufferSize,
-    &Mode
+    &Mode,
+    BobImageHandle
   );
   if (EFI_ERROR (Status)) {
     DEBUG ((DEBUG_ERROR, "%a: variable '%s' could not be read - bailing!\n", 
@@ -168,9 +169,9 @@ Demo1BobInit (
   )
 {
   EFI_STATUS        Status;
-  UINTN             Mode;
   UINTN             BufferSize = sizeof(Mode);
 
+  BobImageHandle = ImageHandle;
   // Open the LoadImage protocol to get access to the base and size.
   Status = gBS->OpenProtocol (
     ImageHandle,
@@ -222,7 +223,8 @@ Demo1BobInit (
     NULL,
     &bobKey,
     &BufferSize,
-    &Mode
+    &Mode,
+    BobImageHandle
   );
   if (EFI_ERROR (Status)) {
     DEBUG ((DEBUG_ERROR, "%a: variable '%s' could not be read - bailing!\n", 
@@ -348,8 +350,6 @@ Demo1BobDataProvider(
   if ( IBase + gLoadImage->ImageSize < IAddress + Size ) { //[BUG] possible integer overflow
     return EFI_ACCESS_DENIED;
   }
-  //print Address
-  DEBUG ((DEBUG_ERROR, "Address is %p\n",Address));
   Storage = AllocatePool(Size);
 
   if ( Storage == NULL ) {

@@ -37,8 +37,16 @@ Revision History
 /// Global ID for the Component Name Protocol
 ///
 #define Example1_Driver_Lockbox_PROTOCOL_GUID { 0xf3aae06f, 0x7716, 0x4722,{ 0xb6, 0x26, 0x02, 0x64, 0x79, 0xb9, 0xfa, 0x57 } }
-#define _Assume_bounds_cast_M(T, e1, ... ) _Assume_bounds_cast<T>(e1, __VA_ARGS__)
-#define _Dynamic_bounds_cast_M(T, e1, ... ) _Dynamic_bounds_cast<T>(e1, __VA_ARGS__)
+//#define _Assume_bounds_cast_M(T, e1, ... ) _Assume_bounds_cast<T>(e1, __VA_ARGS__)
+//#define _Dynamic_bounds_cast_M(T, e1, ... ) _Dynamic_bounds_cast<T>(e1, __VA_ARGS__)
+#define _Assume_bounds_cast_M(T, e1, ... )(T)(e1)
+#define _Dynamic_bounds_cast_M(T, e1, ... )  (T)(e1)
+#define _Single
+#define _Array
+#define _Byte_count(x)
+#define _Itype(x)
+#define _Bounds(x, y)
+#define _Checked
 
 typedef struct _Example1_Driver_Lockbox_PROTOCOL Example1_Driver_Lockbox_PROTOCOL;
 extern UINTN lockbox_length;

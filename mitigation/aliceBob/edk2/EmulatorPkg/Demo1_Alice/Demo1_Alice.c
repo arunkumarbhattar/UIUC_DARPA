@@ -13,6 +13,7 @@ Revision History: 0.1
 
 #include "Demo1_Alice.h"
 
+EFI_HANDLE        AliceImageHandle;
 // PRODUCED
 Demo1_Alice_PROTOCOL
 gDemo1_Alice_Protocol = {
@@ -61,10 +62,11 @@ ReadyToRun(
     EFI_VARIABLE_BOOTSERVICE_ACCESS | EFI_VARIABLE_RUNTIME_ACCESS | EFI_VARIABLE_NON_VOLATILE,
     aliceKey,
     sizeof(UINTN),
-    &Mode
+    &Mode,
+    AliceImageHandle
   );
   if (EFI_ERROR (Status)) {
-    DEBUG ((DEBUG_ERROR, "%a: variable '%s' could not be written - bailing!\n", 
+    DEBUG ((DEBUG_ERROR, "%a: variable '%s' could not be written - bailing!\n",
       __FUNCTION__, ALICEMODE_VARNAME));
     ASSERT_EFI_ERROR (EFI_ABORTED);
   }
@@ -105,7 +107,7 @@ Demo1AliceInit (
   )
 {
   EFI_STATUS        Status;
-
+  AliceImageHandle = ImageHandle;
   //
   // Get Random Number Generator protocol
   //
@@ -163,7 +165,8 @@ Demo1AliceInit (
     EFI_VARIABLE_BOOTSERVICE_ACCESS | EFI_VARIABLE_RUNTIME_ACCESS | EFI_VARIABLE_NON_VOLATILE,
     aliceKey,
     sizeof(UINTN),
-    &Mode
+    &Mode,
+    AliceImageHandle
   );
   if (EFI_ERROR (Status)) {
     DEBUG ((DEBUG_ERROR, "%a: variable '%s' could not be written - bailing!\n", 

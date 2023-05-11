@@ -34,13 +34,14 @@ Revision History: 0.1
 #define Demo1_Access_Key_Ready_To_Lock_GUID { 0xe795d54e, 0xd24f, 0x430e,{ 0xa6, 0x33, 0xec, 0xe5, 0xd8, 0x72, 0xd8, 0xc2 } }
 
 typedef struct _Demo1_Access_Key_PROTOCOL Demo1_Access_Key_PROTOCOL;
-#define _Dynamic_bounds_cast_M(T, e1, ... )  (T)(e1)
-#define _Single
-#define _Array
-#define _Byte_count(x)
-#define _Itype(x)
-#define _Bounds(x, y)
-#define _Checked
+#define _Dynamic_bounds_cast_M(T, e1, ... ) _Dynamic_bounds_cast<T>(e1, __VA_ARGS__)
+//#define _Dynamic_bounds_cast_M(T, e1, ... )  (T)(e1)
+//#define _Single
+//#define _Array
+//#define _Byte_count(x)
+//#define _Itype(x)
+//#define _Bounds(x, y)
+//#define _Checked
 #define KEYSIZE   16
 
 #define ACCESS_KEY_MAGIC      0xDEC0DEBABB1E

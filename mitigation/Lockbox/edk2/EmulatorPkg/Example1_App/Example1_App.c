@@ -5,7 +5,7 @@
 #include <Protocol/ShellParameters.h>
 
 #include "../Example1_Driver_Lockbox/Example1_Driver_Lockbox.h"
-_Ptr<Example1_Driver_Lockbox_PROTOCOL> ProtocolInterface = NULL;
+Example1_Driver_Lockbox_PROTOCOL* _Single ProtocolInterface = NULL;
 
 /* We assume 
  *   EMUPKG ONLY: the address range to search for lockpin address starts at 0x41000000
@@ -28,9 +28,6 @@ _Ptr<Example1_Driver_Lockbox_PROTOCOL> ProtocolInterface = NULL;
 #define LOCKPIN_CRC32           0x3E9D2A79
 extern UINTN lockbox_length;
 extern char* _Array lockbox_start _Byte_count(lockbox_length);
-#define _Assume_bounds_cast_M(T, e1, ... ) _Assume_bounds_cast<T>(e1, __VA_ARGS__)
-#define _Dynamic_bounds_cast_M(T, e1, ... ) _Dynamic_bounds_cast<T>(e1, __VA_ARGS__)
-
 
 /* ScanMemViaCRC
  * CRC32 provides the equivalent of an address leak if the contents of an address is known beforehand
@@ -108,7 +105,7 @@ Example1_App_Entry (
     /* 3. ATTEMPT TO WRITE TO LOCKBOX AREA - EXPECTED TO FAIL */
     Print(L"Call Driver WriteData function to write data to lockbox (expected to fail)\r\n");
     retval = ProtocolInterface->Example1_Driver_Lockbox_WriteData_Wrapper(ProtocolInterface, NULL, LOCKBOX_OFFSET,
-                                                                          _Assume_bounds_cast_M(char* _Array, WRITE_MESSAGE, byte_count(WRITE_SIZE)), WRITE_SIZE);
+                                                                          _Assume_bounds_cast_M(char* _Array, WRITE_MESSAGE, _Byte_count(WRITE_SIZE)), WRITE_SIZE);
     if (retval == 0)
     {
         Print(L"Succeeded in writing data to lockbox (%d), quitting\r\n", retval);
@@ -152,7 +149,7 @@ Example1_App_Entry (
                                                                              lockpinAddr,
                                                                               bounds(lockbox_start, lockbox_length + lockbox_start)),
                                                                       _Assume_bounds_cast_M(char* _Array, &lockpinValue,
-                                                                              byte_count(sizeof(UINTN))),
+                                                                              _Byte_count(sizeof(UINTN))),
                                                                       sizeof(UINTN));
         if (retval != 0)
         {
@@ -165,7 +162,7 @@ Example1_App_Entry (
         /* 7. ATTEMPT TO WRITE TO LOCKBOX AREA - EXPECTED TO SUCCEED */
         Print(L"Call Driver WriteData function to write data to lockbox (expected to succeed)\r\n");
         retval = ProtocolInterface->Example1_Driver_Lockbox_WriteData_Wrapper(ProtocolInterface, NULL, LOCKBOX_OFFSET,
-                                                                              _Assume_bounds_cast_M(char* _Array, WRITE_MESSAGE, byte_count(WRITE_SIZE)), WRITE_SIZE);
+                                                                              _Assume_bounds_cast_M(char* _Array, WRITE_MESSAGE, _Byte_count(WRITE_SIZE)), WRITE_SIZE);
         if (retval != 0)
         {
             Print(L"Failed to write to lockbox, quitting (%d)\r\n", retval);

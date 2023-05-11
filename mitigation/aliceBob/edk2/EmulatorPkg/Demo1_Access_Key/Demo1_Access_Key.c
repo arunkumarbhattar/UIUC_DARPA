@@ -193,8 +193,6 @@ Demo1AccessKeyInit (
   )
 {
   EFI_STATUS        Status;
- //print access_key_lock
-    DEBUG ((DEBUG_INFO, "%a: accessKeyLock = %p\n", __FUNCTION__, &accessKeyLock));
   //
   // Get Random Number Generator protocol
   //

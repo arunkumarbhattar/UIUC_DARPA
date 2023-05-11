@@ -57,17 +57,19 @@ Revision History: 0.1
 
 #include "../../MdeModulePkg/Universal/Variable/RuntimeDxe/Variable.h"
 #include "../Demo1_Access_Key/Demo1_Access_Key.h"
-#define _Dynamic_bounds_cast_M(T, e1, ... )  (T)(e1)
-#define _Single
-#define _Array
-#define _Byte_count(x)
-#define _Itype(x)
-#define _Bounds(x, y)
+#define _Dynamic_bounds_cast_M(T, e1, ... ) _Dynamic_bounds_cast<T>(e1, __VA_ARGS__)
+//#define _Dynamic_bounds_cast_M(T, e1, ... )  (T)(e1)
+//#define _Single
+//#define _Array
+//#define _Byte_count(x)
+//#define _Itype(x)
+//#define _Bounds(x, y)
 
 
 #define LOCKED    1
 #define UNLOCKED  0
 #define VALID_MEMORY_START ((UINTN) 0)
 #define VALID_MEMORY_END (VALID_MEMORY_START + MAX_UINTN  - 1)
-
+extern  UINTN*           ImageStart;
+extern  UINTN*           ImageEnd;
 #endif

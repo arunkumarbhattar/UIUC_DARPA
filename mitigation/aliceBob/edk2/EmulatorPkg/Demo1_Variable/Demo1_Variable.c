@@ -32,7 +32,8 @@ VARIABLE_STORE_HEADER  *mineNvVariableCache = NULL;
 /// The memory entry used for variable statistics data.
 ///
 VARIABLE_INFO_ENTRY  *gVarInfo = NULL;
-
+UINTN*           ImageStart = NULL;
+UINTN*           ImageEnd = NULL;
 /**
   This code checks if variable header is valid or not.
 
@@ -1154,7 +1155,8 @@ mineVariableServiceSetVariable (
   IN UINT32                           Attributes,
   IN DEMO1_ACCESS_KEY                 *AccessKey _Itype(DEMO1_ACCESS_KEY* _Single),
   IN UINTN                            DataSize,
-  IN VOID                             *Data _Itype(VOID* _Array) _Byte_count(DataSize)
+  OUT     VOID* _Array                Data _Bounds(ImageStart, ImageEnd) OPTIONAL,
+  IN EFI_HANDLE                       ImageHandle
   )
 {
   ACCESS_VARIABLE_POINTER_TRACK   Variable;
@@ -1164,6 +1166,7 @@ mineVariableServiceSetVariable (
   UINTN                           PayloadSize;
   BOOLEAN                         AuthFormat;
   BOOLEAN                         ValidKey;
+  EFI_LOADED_IMAGE_PROTOCOL       *LoadedImage = NULL;
 
   AuthFormat = mineVariableModuleGlobal->VariableGlobal.AuthFormat;
 
@@ -1188,8 +1191,14 @@ mineVariableServiceSetVariable (
     return EFI_INVALID_PARAMETER;
   }
 
-  //
-  // Parse non-volatile variable data and get last variable offset.
+  Status = gBS->HandleProtocol(ImageHandle, &gEfiLoadedImageProtocolGuid, (VOID**)&LoadedImage);
+
+  _Bundled{
+      ImageStart = (UINTN*) LoadedImage->ImageBase;
+      ImageEnd = (UINTN*)(ImageStart + LoadedImage->ImageSize);
+      Data = _Assume_bounds_cast<VOID* _Array>( Data, _Bounds(ImageStart, ImageEnd));
+  }
+// Parse non-volatile variable data and get last variable offset.
   //
   Point = mineVariableModuleGlobal->VariableGlobal.NonVolatileVariableBase;
   NextVariable = GetAccessStartPointer ((VARIABLE_STORE_HEADER *)(UINTN)Point);
@@ -1206,7 +1215,7 @@ mineVariableServiceSetVariable (
   }
 
   FindAccessVariable (VariableName, VendorGuid, &Variable, &mineVariableModuleGlobal->VariableGlobal, TRUE);
-  Status = UpdateAccessVariable (VariableName, VendorGuid, AccessKey, Data, DataSize, Attributes, 0, 0, &Variable, NULL);
+  Status = UpdateAccessVariable (VariableName, VendorGuid, AccessKey, (void*)Data, DataSize, Attributes, 0, 0, &Variable, NULL);
   return Status;
 }
 
@@ -1238,13 +1247,15 @@ mineVariableServiceGetVariable (
   OUT     UINT32                      *Attributes _Itype(UINT32* _Single) OPTIONAL,
   IN      DEMO1_ACCESS_KEY            *AccessKey _Itype(DEMO1_ACCESS_KEY* _Single),
   IN OUT  UINTN                       *DataSize _Itype(UINTN* _Single),
-  OUT     VOID                        *Data _Itype(VOID* _Array) _Byte_count(*DataSize) OPTIONAL
+  OUT     VOID* _Array                Data _Bounds(ImageStart, ImageEnd) OPTIONAL,
+  IN EFI_HANDLE                       ImageHandle
   )
 {
   EFI_STATUS                      Status;
   ACCESS_VARIABLE_POINTER_TRACK   Variable;
   UINTN                           VarDataSize;
   BOOLEAN                         ValidKey;
+  EFI_LOADED_IMAGE_PROTOCOL       *LoadedImage = NULL;
 
   if ((VariableName == NULL) || (VendorGuid == NULL) || (DataSize == NULL)) {
     return EFI_INVALID_PARAMETER;
@@ -1259,6 +1270,19 @@ mineVariableServiceGetVariable (
   }
   if (!ValidKey){
     return EFI_INVALID_PARAMETER;
+  }
+
+  Status = gBS->HandleProtocol(ImageHandle, &gEfiLoadedImageProtocolGuid, (VOID**)&LoadedImage);
+
+  if(EFI_ERROR(Status)){
+      return Status;
+  }
+  //print you the image start, image end and data address
+
+  _Bundled{
+        ImageStart = (UINTN*) LoadedImage->ImageBase;
+        ImageEnd = (UINTN*)(ImageStart + LoadedImage->ImageSize);
+        Data = _Assume_bounds_cast<VOID* _Array>( Data, _Bounds(ImageStart, ImageEnd));
   }
 
   Status = FindAccessVariable (VariableName, VendorGuid, &Variable, &mineVariableModuleGlobal->VariableGlobal, FALSE);
@@ -1278,7 +1302,8 @@ mineVariableServiceGetVariable (
       goto Done;
     }
 
-    CopyMem (Data, GetAccessVariableDataPtr (Variable.CurrPtr, mineVariableModuleGlobal->VariableGlobal.AuthFormat), VarDataSize);
+    VOID* _Array Data_ptr _Byte_count(VarDataSize) = _Dynamic_bounds_cast_M(VOID* _Array, Data, _Byte_count(VarDataSize));
+    CopyMem (Data_ptr, GetAccessVariableDataPtr (Variable.CurrPtr, mineVariableModuleGlobal->VariableGlobal.AuthFormat), VarDataSize);
 
     *DataSize = VarDataSize;
     UpdateAccessVariableInfo (VariableName, VendorGuid, Variable.Volatile, TRUE, FALSE, FALSE, FALSE, &gVarInfo);
@@ -1347,8 +1372,8 @@ Demo1VariableInit (
     return Status;
   } 
 
-  SystemTable->RuntimeServices->GetAccessVariable = mineVariableServiceGetVariable;
-  SystemTable->RuntimeServices->SetAccessVariable = mineVariableServiceSetVariable;
+  SystemTable->RuntimeServices->GetAccessVariable = (EFI_GET_ACCESS_VARIABLE) mineVariableServiceGetVariable;
+  SystemTable->RuntimeServices->SetAccessVariable = (EFI_SET_ACCESS_VARIABLE) mineVariableServiceSetVariable;
   return EFI_SUCCESS;
 }
 

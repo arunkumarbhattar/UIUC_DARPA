@@ -31,12 +31,12 @@ Revision History: 0.1
 /// Global GUIDs - for reference: values are stored in EmulatorPkg.dec
 ///
 #define Demo1_Bob_PROTOCOL_GUID { 0xa3aae06f, 0x7716, 0x4722,{ 0xb6, 0x26, 0x02, 0x64, 0x79, 0xb9, 0xfa, 0x57 } }
-#define _Single
-#define _Array
-#define _Byte_count(x)
-#define _Itype(x)
-#define _Bounds(x, y)
-#define byte_count(x)
+//#define _Single
+//#define _Array
+//#define _Byte_count(x)
+//#define _Itype(x)
+//#define _Bounds(x, y)
+//#define byte_count(x)
 
 extern UINTN DataToProvide;
 typedef struct _Demo1_Bob_PROTOCOL Demo1_Bob_PROTOCOL;

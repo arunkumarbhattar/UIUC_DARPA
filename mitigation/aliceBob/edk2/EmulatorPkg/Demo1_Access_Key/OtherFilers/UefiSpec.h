@@ -22,6 +22,11 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #include <Protocol/SimpleTextInEx.h>
 #include <Protocol/SimpleTextOut.h>
 
+///base and bound for memory accessors
+// NOTE: these are initialized in a context specific manner
+extern UINTN* image_base;
+extern UINTN* image_end;
+
 ///
 /// Enumeration of EFI memory allocation types.
 ///
@@ -709,7 +714,7 @@ EFI_STATUS
   OUT    UINT32                      *Attributes   :itype(_Ptr<UINT32>) OPTIONAL,
   IN     DEMO1_ACCESS_KEY           *AccessKey :itype(_Ptr<DEMO1_ACCESS_KEY >),
   IN OUT UINTN                       *DataSize :itype(_Ptr<UINTN>),
-  OUT    VOID                        *Data :itype(_Array_ptr<VOID>) byte_count(*DataSize) OPTIONAL
+  OUT    VOID                        *Data :itype(_Array_ptr<VOID>) bounds(image_base, image_end) OPTIONAL
   );
 
 /**

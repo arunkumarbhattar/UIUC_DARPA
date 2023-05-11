@@ -26,21 +26,22 @@ Revision History: 0.1
 
 #include "../Demo1_Access_Key/Demo1_Access_Key.h"
 #include "../Demo1_Variable/Demo1_Variable.h"
-//#define _Dynamic_bounds_cast_M(T, e1, ... ) _Dynamic_bounds_cast<T>(e1, __VA_ARGS__)
-//#define _Assume_bounds_cast_M(T, e1, ... ) _Assume_bounds_cast<T>(e1, __VA_ARGS__)
-#define _Dynamic_bounds_cast_M(T, e1, ... )  (T)(e1)
-#define _Assume_bounds_cast_M(T, e1, ... )  (T)(e1)
-#define _Single
-#define _Array
-#define _Byte_count(x)
-#define _Itype(x)
-#define _Bounds(x, y)
+#define _Dynamic_bounds_cast_M(T, e1, ... ) _Dynamic_bounds_cast<T>(e1, __VA_ARGS__)
+#define _Assume_bounds_cast_M(T, e1, ... ) _Assume_bounds_cast<T>(e1, __VA_ARGS__)
+//#define _Dynamic_bounds_cast_M(T, e1, ... )  (T)(e1)
+//#define _Assume_bounds_cast_M(T, e1, ... )  (T)(e1)
+//#define _Single
+//#define _Array
+//#define _Byte_count(x)
+//#define _Itype(x)
+//#define _Bounds(x, y)
 
 ///
 /// Global GUIDs - for reference: values are stored in EmulatorPkg.dec
 ///
 #define Demo1_Alice_PROTOCOL_GUID           { 0x1cf631f3, 0xbe03, 0x4435,{ 0xa6, 0x32, 0x79, 0x4f, 0x85, 0x82, 0x0b, 0xab } }
 #define Demo1_Alice_Ready_To_Run_GUID       { 0xc77ed9a1, 0x2785, 0x4a62,{ 0xa5, 0x12, 0xf5, 0x75, 0xfd, 0x64, 0x70, 0x73 } }
+
 
 typedef struct _Demo1_Alice_PROTOCOL Demo1_Alice_PROTOCOL;
 

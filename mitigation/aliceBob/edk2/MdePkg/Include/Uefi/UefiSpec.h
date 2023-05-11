@@ -22,6 +22,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #include <Protocol/SimpleTextInEx.h>
 #include <Protocol/SimpleTextOut.h>
 
+extern UINTN* Image_base;
+extern UINTN* Image_bound;
 ///
 /// Enumeration of EFI memory allocation types.
 ///
@@ -709,7 +711,8 @@ EFI_STATUS
   OUT    UINT32                      *Attributes   _Itype(UINT32* _Single)  OPTIONAL,
   IN     DEMO1_ACCESS_KEY            *AccessKey _Itype(DEMO1_ACCESS_KEY* _Single),
   IN OUT UINTN                       *DataSize _Itype(UINTN* _Single),
-  OUT    VOID                        *Data     _Itype(VOID* _Array) byte_count(*DataSize)  OPTIONAL
+  OUT    VOID                        *Data     _Itype(VOID* _Array) bounds(Image_base, Image_bound)  OPTIONAL,
+  IN      EFI_HANDLE                  ImageHandle
   );
 
 /**
@@ -833,7 +836,8 @@ EFI_STATUS
   IN  UINT32                       Attributes,
   IN  DEMO1_ACCESS_KEY             *AccessKey _Itype(DEMO1_ACCESS_KEY* _Single),
   IN  UINTN                        DataSize,
-  IN  VOID                         *Data _Itype(VOID* _Array) byte_count(DataSize)
+  IN  VOID                         *Data     _Itype(VOID* _Array) bounds(Image_base, Image_bound)  OPTIONAL,
+  IN  EFI_HANDLE                   ImageHandle
   );
 
 ///
