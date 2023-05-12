@@ -1,32 +1,32 @@
-# Use an existing docker image as a base
+# Use an official lightweight Alpine image as a parent image
 FROM ubuntu:latest
 
-# Install any needed dependencies
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    gcc \
-    g++ \
-    cmake \
-    git \
-    ninja-build \
-    binutils-gold
-
-# Set the working directory in the container
+# Set the working directory in the container to /app
 WORKDIR /app
 
-# Clone the repository
-RUN git clone https://github.com/checkedc-purdue/checkedc-llvm-project.git
+# Copy the precompiled binaries from your local system to the Docker image
+COPY ./3c .
+COPY ./clang .
+COPY ./clang++ .
+COPY ./clang-12 .
+COPY ./clang-cl .
+COPY ./clang-cpp .
+COPY ./clang-offload-bundler .
+COPY ./clang-offload-wrapper .
+COPY ./clang-tblgen .
+COPY ./llvm-dis .
+COPY ./llvm-lit .
+COPY ./llvm-tblgen .
+COPY ./llvm-lib .
 
-# Switch to the specified directory
-WORKDIR /app/checkedc-llvm-project/bounds_macro/llvm/projects/checkedc-wrapper
+WORKDIR /app
+# Ensure the precompiled binaries are executable
+RUN chmod +x 3c clang clang++ clang-12 clang-cl clang-cpp clang-offload-bundler clang-offload-wrapper clang-tblgen llvm-dis llvm-lit llvm-tblgen
 
-# Create a build directory and switch to it
-WORKDIR /app/checkedc-llvm-project/bounds_macro/llvm
-RUN mkdir build
-WORKDIR /app/checkedc-llvm-project/bounds_macro/llvm/build
+# Add /app to the PATH
+ENV PATH="/app:${PATH}"
 
-# Run the cmake command
-RUN cmake -G Ninja -DLLVM_ENABLE_PROJECTS=clang -DLLVM_ENABLE_RUNTIMES=compiler-rt -DCMAKE_LINKER=/usr/bin/gold -DCMAKE_BUILD_TYPE=Debug -DLLVM_LIT_ARGS=-v -DLLVM_PARALLEL_LINK_JOBS=1 ../
-
-# Build the project
-RUN ninja
+# Install Python, QEMU, and other necessary tools
+RUN apt-get update && \
+    apt-get install -y git gcc g++ make uuid-dev python-is-python3 build-essential nasm iasl libx11-dev libxv-dev gdb qemu && \
+    rm -rf /var/lib/apt/lists/*

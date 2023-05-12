@@ -1,16 +1,23 @@
 #!/bin/bash
 
-# Switch to the directory and build it
-cd /app/my-compiler-compiler
-cmake .
-make
+# Pull the Docker image
+docker pull checkedcbox/checkedc-uefi:v1.0
 
-# Clone the repository and switch to the directory
-cd /app
-git@github.com:arunkumarbhattar/UIUC_DARPA.git
-cd /app/UIUC_DARPA
+# Create and run a Docker container, where:
+# -it allows you to interact with the container
+# --name names the container 'my_container'
+# The container will start with a bash shell
+docker run -it --name my_container checkedcbox/checkedc-uefi:v1.0 /bin/bash
 
-# Add any additional commands here...
+# Inside the Docker container, install git
+apt-get update
+apt-get install -y git
 
-# Start a shell
-bash
+# Clone the git repository
+git clone git@github.com:arunkumarbhattar/UIUC_DARPA.git
+
+# Change directory to the cloned repository
+cd UIUC_DARPA
+
+# Print the current directory to verify the switch was successful
+pwd
